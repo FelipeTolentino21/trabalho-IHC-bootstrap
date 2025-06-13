@@ -11,16 +11,17 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light shadow bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light shadow bg-white"> <!-- Navbar -->
             <div class="container-fluid">
                 <a class="navbar-brand" href="/pages/pagina_inicial.html">
                     <img src="../imgs/logo-dungeon-meshi.png" alt="logo-dungeon-meshi">
                 </a>
 
                 <!-- Botão do menu sanduiche -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMeshi"
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuMeshi"
                     aria-controls="menuMeshi" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="/imgs/left-arrow-chevron.svg" alt="botao-colapse" width="50px" height="50px"> <!-- Hamburg Icon -->
+                    <img src="../imgs/iconehamburguer.svg" alt="botao-colapse" width="50px" height="50px">
+                    <!-- Hamburg Icon -->
                 </button>
 
                 <!-- Itens que colapsam -->
@@ -33,12 +34,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/pages/personagens.html">Personagens</a>
                         </li>
-                        <li class="nav-item">
-                            <div class="form-check form-switch mt-2 ms-2">
-                                <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
-                                <label class="form-check-label" for="modo-noturno">Modo Noturno</label>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -46,8 +41,8 @@
     </header>
 
 
-    <div class="container mt-4">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="container mt-4 mb-5">
+        <div id="carousel" class="carousel slide" data-ride="carousel"> <!-- Carrousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="../imgs/dungeonM1.png" alt="First slide">
@@ -59,28 +54,91 @@
                     <img class="d-block w-100" src="../imgs/dungeonM3.png" alt="Third slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <img src="../imgs/left-arrow-chevron.svg" alt="setaEsq" width="50px" height="50px">
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <img src="../imgs/setaEsq.svg" alt="setaEsq" width="50px" height="50px">
                 <span class="sr-only text-body">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <img src="../imgs/right-arrow-backup-2-svgrepo-com.svg" alt="setaDir" width="63px" height="63px">
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <img src="../imgs/setaDir.svg" alt="setaDir" width="63px" height="63px">
                 <span class="sr-only text-body">Próxima</span>
             </a>
         </div>
         <div class="mt-2">
-            <h1>Sinopse</h1>
+            <h1>Sinopse</h1> <!-- Texto com tooltip -->
             <h4>"Dungeon Meshi" (ou "Delicious in Dungeon") é um mangá e anime de comédia e aventura que acompanha um
-                <a href="personagens.html/#" data-toggle="tooltip" data-placement="top" title="Personagens">grupo de aventureiros</a>
+                <a href="personagens.html" data-toggle="tooltip" data-placement="top" title="Personagens">grupo de
+                    aventureiros</a>
                 que explora masmorras para sobreviver e encontrar comida. Eles são conhecidos por
-                caçar monstros e prepará-los em pratos deliciosos, com um foco especial no anão guerreiro Senshi, que é
+                caçar monstros e prepará-los em pratos deliciosos, com um foco especial no anão guerreiro
+                <a href="personagens.html" data-toggle="tooltip" data-placement="top" title="Senshi">Senshi</a>, que é
                 um ótimo cozinheiro. A história segue as aventuras de Laios e seus amigos em busca de tesouros e outras
-                recompensas dentro das masmorras, enfrentando perigos e, claro, preparando refeições saborosas. </h4>
+                recompensas dentro das masmorras, enfrentando perigos e, claro, preparando refeições saborosas.
+            </h4>
+        </div>
+        <div class="mt-5">
+            <h1>Curiosidades</h1> <!-- Texto com tooltip -->
+            <h4>Cada episódio coloca o paladino <a href="personagens.html" data-toggle="tooltip" data-placement="top"
+                    title="Laios">Laios</a> e seus amigos devorando as receitas mais peculiares em que os
+                monstros são os ingredientes principais. Se a proposta já não fosse surpreendente o suficiente, aqui vão
+                algumas curiosidades:</h4>
+        </div>
+        <div class="accordion mt-5" id="accordionCuriosidades"> <!-- Accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Curiosidade 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        <strong> idades dos personagens principais são:</strong><br>
+                        Laios Touden: 26 anos; <br>
+                        Marcille Donato: 50 anos; <br>
+                        Chilchuck: 29 anos (50 anos, em idade de humano); <br>
+                        Senshi: 112 anos; <br>
+                        Falin Touden: 23 anos; <br>
+                        Izutsumi: 17 anos; <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Curiosidade 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        O manga de Dungeon Meshi foi escrito e desenhado pela mangaká Ryoko Kui, publicado de
+                        2014 a 2023, com um total de 102 capítulos divididos em 14 volumes. Em inglês, foi traduzido
+                        para "Delicious in Dungeon".
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Curiosidade 3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-parent="#accordionCuriosidades">
+                    <div class="accordion-body">
+                        Desde o seu início, o mangá recebeu uma propaganda animada, livro suplementar, colaboração com
+                        lanchonetes japonesas (com recriações dos exóticos pratos do mangá), jogo de tabuleiro, figuras
+                        plásticas dos personagens e até um anime, que foi anunciado em 2022 e começou sua exibição 4 de
+                        janeiro de 2024.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-
-
+    <audio autoplay loop>
+        <source src="../audio/musica.mp3">
+    </audio>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -92,4 +150,5 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
